@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Text, View,TouchableOpacity,StyleSheet } from 'react-native';
+import {MaterialButton} from './components/MaterialButton/MaterialButton'
 
 export class TestComponent extends Component {
     constructor(props){
@@ -14,11 +15,11 @@ export class TestComponent extends Component {
       <View>
           <Text style={styles.textStyle}>Hello, {this.state.name}</Text>
           <Text>Workshop {this.state.workshopNo}</Text>
-          <TouchableOpacity onPress={this.nextWorkshop}>
+          <MaterialButton onPress={this.nextWorkshop} buttonText="Hi">
 
-            <Text>Click me to change workshop</Text>
+            
 
-          </TouchableOpacity>
+          </MaterialButton>
       </View>
     )
   }
