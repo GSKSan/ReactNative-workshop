@@ -10,6 +10,6 @@ export default StyleSheet.create({
     },
     buttonText: {
         color: "#FFF",
-        fontWeight: "400"
+        fontWeight: "700"
     }
 })

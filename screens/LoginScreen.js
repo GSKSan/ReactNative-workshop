@@ -12,12 +12,12 @@ export class LoginScreen extends React.Component {
                     <Text style={styles.headerText}>Lets swipe to the dream job!</Text>
                 </View>
                 <View style={styles.formContainer}>
+                <MaterialButton buttonStyles={[{borderRadius:50},{margin:20}]} buttonText="Login with Facebook! "/>
+                
                 <TextInput style={styles.inputContainer} placeholder="Username"/>
                 <TextInput style={styles.inputContainer} placeholder="Password" secureTextEntry={true} />
-
-                   <TouchableOpacity style={styles.buttonContainer}>
-                    <Text style={styles.buttonText}>SIGN IN </Text>
-                   </TouchableOpacity>
+                <MaterialButton  buttonText="Sign in "/>
+                
 
                    
                 </View>
