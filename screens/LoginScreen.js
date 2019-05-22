@@ -12,7 +12,14 @@ export class LoginScreen extends React.Component {
                     <Text style={styles.headerText}>Lets swipe to the dream job!</Text>
                 </View>
                 <View style={styles.formContainer}>
-                   <TouchableOpacity style={styles.buttonContainer}><Text>Sign in!</Text></TouchableOpacity>
+                <TextInput style={styles.inputContainer} placeholder="Username"/>
+                <TextInput style={styles.inputContainer} placeholder="Password" secureTextEntry={true} />
+
+                   <TouchableOpacity style={styles.buttonContainer}>
+                    <Text style={styles.buttonText}>SIGN IN </Text>
+                   </TouchableOpacity>
+
+                   
                 </View>
 
           </View>
